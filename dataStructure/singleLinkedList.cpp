@@ -1,11 +1,13 @@
-#include "singleLinkedList.h"
+/*#include "singleLinkedList.h"
 
+template <typename T>
 singleLinkedList::singleLinkedList()
 {
 	head = tail = new singleLinkedList_Node(NULL, NULL);
 	num_node = 0;
 }
 
+template <typename T>
 void singleLinkedList::push_front(int value)
 {
 	singleLinkedList_Node* node = new singleLinkedList_Node(value, NULL);
@@ -25,6 +27,7 @@ void singleLinkedList::push_front(int value)
 	num_node++;
 }
 
+template <typename T>
 void singleLinkedList::push_back(int value)
 {
 	singleLinkedList_Node* node = new singleLinkedList_Node(value, NULL);
@@ -35,7 +38,8 @@ void singleLinkedList::push_back(int value)
 	num_node++;
 }
 
-int singleLinkedList::pop_front()
+template <typename T>
+T singleLinkedList::pop_front()
 {
 	int val;
 
@@ -53,7 +57,8 @@ int singleLinkedList::pop_front()
 	return val;
 }
 
-int singleLinkedList::pop_back()
+template <typename T>
+T singleLinkedList::pop_back()
 {
 	int val;
 
@@ -103,4 +108,4 @@ singleLinkedList::~singleLinkedList()
 {
 	while (head->next != NULL) pop_front();
 	delete head;
-}
+}*/
